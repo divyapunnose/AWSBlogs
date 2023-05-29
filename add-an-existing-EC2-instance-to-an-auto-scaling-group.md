@@ -1,4 +1,4 @@
-# How to add an existing EC2 instance to an Auto Scaling group(ASG)
+# Add an existing EC2 instance to an Auto Scaling group(ASG)
 
 An Auto Scaling Group contains multiple EC2 instances that is used to ensure the reliability and scalability of the applications. 
 
@@ -8,8 +8,8 @@ The following steps has to be followed to add an existing EC2 instace to an auto
 
 ## Create the AMI of the existing instance.
 Navigate to:
-* Instances
-* Choose the **Instances**
+* **Instances**
+* **Select the Instance**
 * Choose **Actions**
 * Choose **Image and Templates**
 * Choose **Create Image**
