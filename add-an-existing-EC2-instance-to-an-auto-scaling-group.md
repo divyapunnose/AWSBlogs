@@ -1,4 +1,9 @@
 # How to add an existing EC2 instance to an autoscaling group
+
+An Auto Scaling Group contains multiple EC2 instances that is used to ensure the reliability and scalability of the applications. 
+
+In normal scenarios, the EC2 instances will be created automatically when an ASG is created. However, there can be scenarios where an existing EC2 instance needs to be added to an Auto Scaling Group. This blog helps you to achieve this.
+
 The following steps has to be followed to add an existing EC2 instace to an autoscaling group.
 
 ## Create the AMI of the existing instance.
@@ -67,7 +72,3 @@ You can see the details of the Auto Scaling Group and the instances from by goin
 The detailed logs regarding the activities of the ASG can be found from the Activity Tab
 
 ![](./images/activity_tab.png)
-
-
-
-
