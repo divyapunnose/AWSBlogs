@@ -49,6 +49,8 @@ In our case, we set the following values for the Group size:
 
 >Setting this value will create an Auto Scaling Group without any instances in it.
 
+![](./images/auto-scaling-group-0.png)
+
 Now we can go ahead and add the existing EC2 instance to the Auto Scaling Group. For this,
 * Go to EC2 section
 * Instances
@@ -57,11 +59,14 @@ Now we can go ahead and add the existing EC2 instance to the Auto Scaling Group.
 * Select the mentioned Auto Scaling group.
 
 Once this is done, the EC2 instance will be a part of the ASG. Now, the value of Desired capacity of the ASG is 1 since an instance has been added to it. 
- 
+ ![](./images/auto-scaling-group.png)
 You can see the details of the Auto Scaling Group and the instances from by going to the ASG.
 
+![](./images/asg.png)
+
 The detailed logs regarding the activities of the ASG can be found from the Activity Tab
- 
+
+![](./images/activity_tab.png)
 
 
 
