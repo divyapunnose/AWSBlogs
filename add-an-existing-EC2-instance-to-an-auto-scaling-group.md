@@ -22,6 +22,8 @@ From the AWS Management Console:
 * Choose **Launch Configuration**
 
 Create the Launch Configuration using the previously created AMI of the instance. This AMI will be present under the **MyAMI** option while creating the Launch Configuration.
+
+![](./images/newLC.png)
  
 ## Create the Auto Scaling Group
 * Goto **Auto Scaling**
