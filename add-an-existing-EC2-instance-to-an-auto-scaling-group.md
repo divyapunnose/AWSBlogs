@@ -34,7 +34,7 @@ Here, we are using Launch Configuration to create the Auto Scaling Group. So, cl
 
  ![](./images/lconf.png)
   
-Choose the VPC and the required Availability Zones and subnets. We are using default VPC here. Make sure that the VPC and the Availability Zone are the same as that of the instance which is to be added in the Auto Scaling Group.
+Choose the VPC and the required Availability Zones and subnets. We are using default VPC here. ```Make sure that the VPC and the Availability Zone are the same as that of the instance which is to be added in the Auto Scaling Group```.
 
 An important section in this configuration is the
 ```Group size``` option ```Configure group size``` and ```scaling policies``` section.
