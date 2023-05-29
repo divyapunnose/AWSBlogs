@@ -32,7 +32,6 @@ Create the Launch Configuration using the previously created AMI of the instance
 
 Here, we are using Launch Configuration to create the Auto Scaling Group. So, click on the ```Switch to Launch Configiration``` option and choose the lauch configuration we have created.
 
-![](./images/launchConfig.png)
   
 Choose the VPC and the required Availability Zones and subnets. We are using default VPC here. Make sure that the VPC and the Availability Zone are the same as that of the instance which is to be added in the Auto Scaling Group.
 
