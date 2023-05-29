@@ -1,4 +1,4 @@
-# How to add an existing EC2 instance to an autoscaling group
+# How to add an existing EC2 instance to an Auto Scaling group(ASG)
 
 An Auto Scaling Group contains multiple EC2 instances that is used to ensure the reliability and scalability of the applications. 
 
@@ -9,7 +9,7 @@ The following steps has to be followed to add an existing EC2 instace to an auto
 ## Create the AMI of the existing instance.
 Navigate to:
 * Instances
-* Choose the **Instance**
+* Choose the **Instances**
 * Choose **Actions**
 * Choose **Image and Templates**
 * Choose **Create Image**
@@ -18,16 +18,16 @@ Navigate to:
  
 ## Create a Launch Configuration
 From the AWS Management Console:
-* Choose AutoScaling Group
-* Choose Launch Configuration
+* Choose **Auto Scaling Group**
+* Choose **Launch Configuration**
 
-Create the Launch Configuration using the previously created AMI of the instance. This AMI will be present under the MyAMI option while creating the Launch Configuration.
+Create the Launch Configuration using the previously created AMI of the instance. This AMI will be present under the **MyAMI** option while creating the Launch Configuration.
  
  ![](./images/lconf.png)
 
 ## Create the Auto Scaling Group
-* Goto Auto Scaling
-* Auto Scaling Groups
+* Goto **Auto Scaling**
+* Choose **Auto Scaling Groups**
 * Create Auto Scaling Group.
 
 Here, we are using Launch Configuration to create the Auto Scaling Group. So, click on the ```Switch to Launch Configiration``` option and choose the lauch configuration we have created.
@@ -39,11 +39,11 @@ Choose the VPC and the required Availability Zones and subnets. We are using def
 An important section in this configuration is the
 ```Group size``` option ```Configure group size``` and ```scaling policies``` section.
 
-### Desired capacity
+### **Desired capacity**
 Desired capacity represents the initial capacity of the Auto Scaling group at the time of creation. An Auto Scaling group attempts to maintain the desired capacity. It starts by launching the number of instances that are specified for the desired capacity, and maintains this number of instances as long as there are no scaling policies or scheduled actions attached to the Auto Scaling group.
-### Minimum capacity
+### **Minimum capacity**
 Minimum capacity represents the minimum group size. When scaling policies are set, an Auto Scaling group cannot decrease its desired capacity lower than the minimum size limit.
-### Maximum capacity
+### **Maximum capacity**
 Maximum capacity represents the maximum group size. When scaling policies are set, an Auto Scaling group cannot increase its desired capacity higher than the maximum size limit.
 
 In our case, we set the following values for the Group size:
@@ -59,11 +59,12 @@ In our case, we set the following values for the Group size:
 ![](./images/auto-scaling-group-0.png)
 
 Now we can go ahead and add the existing EC2 instance to the Auto Scaling Group. For this,
-* Go to EC2 section
-* Instances
-* Select the instance
-* Attach to Auto Scaling group
-* Select the mentioned Auto Scaling group.
+* Go to **Instances**
+* **Select the instance**
+* Choose **Actions**
+* Choose **Instance Settings**
+* Select the **Attach to Auto Scaling group** option
+* Select the Auto Scaling group we have created.
 
 Once this is done, the EC2 instance will be a part of the ASG. Now, the value of Desired capacity of the ASG is 1 since an instance has been added to it. 
  ![](./images/auto-scaling-group.png)
