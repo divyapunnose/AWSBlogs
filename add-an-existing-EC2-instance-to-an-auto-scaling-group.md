@@ -7,6 +7,9 @@ In normal scenarios, the EC2 instances will be created automatically when an ASG
 The following steps has to be followed to add an existing EC2 instace to an autoscaling group.
 
 ## Create the AMI of the existing instance.
+
+Before creating the AMI of the instance, make sure that the website/application in the EC2 instance is working as expected. It is also recommended to reboot the instance and confirm that everything is working fine. Once it is verified, you can follow the below steps :
+
 Navigate to:
 * **Instances**
 * **Select the Instance**
@@ -15,8 +18,13 @@ Navigate to:
 * Choose **Create Image**
 
 ![](./images/ami.png)
+
+This will create the AMI of the existing EC2 instance that is to be added to the Auto Scaling Group.
  
 ## Create a Launch Configuration
+
+A Launch configuration will contain the information that the Auto Scaling Group will use to create the instances. 
+
 From the AWS Management Console:
 * Choose **Auto Scaling Group**
 * Choose **Launch Configuration**
