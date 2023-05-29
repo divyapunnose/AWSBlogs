@@ -4,10 +4,10 @@ The following steps has to be followed to add an existing EC2 instace to an auto
 ## Create the AMI of the existing instance.
 Navigate to:
 * Instances
-* Choose the instance
-* Choose Actions
-* Choose Image and Templates
-* Choose Create Image
+* Choose the **Instance**
+* Choose **Actions**
+* Choose **Image and Templates**
+* Choose **Create Image**
  
 ## Create a Launch Configuration
 From the AWS Management Console:
