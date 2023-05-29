@@ -13,6 +13,8 @@ Navigate to:
 * Choose **Actions**
 * Choose **Image and Templates**
 * Choose **Create Image**
+
+![](./images/ami.png)
  
 ## Create a Launch Configuration
 From the AWS Management Console:
