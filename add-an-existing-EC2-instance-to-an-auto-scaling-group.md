@@ -37,7 +37,7 @@ Here, we are using Launch Configuration to create the Auto Scaling Group. So, cl
 Choose the VPC and the required Availability Zones and subnets. We are using default VPC here. ```Make sure that the VPC and the Availability Zone are the same as that of the instance which is to be added in the Auto Scaling Group```.
 
 An important section in this configuration is the
-```Group size``` option ```Configure group size``` and ```scaling policies``` section.
+```Group size``` option under the ```Configure group size and scaling policies``` section.
 
 ### **Desired capacity**
 Desired capacity represents the initial capacity of the Auto Scaling group at the time of creation. An Auto Scaling group attempts to maintain the desired capacity. It starts by launching the number of instances that are specified for the desired capacity, and maintains this number of instances as long as there are no scaling policies or scheduled actions attached to the Auto Scaling group.
