@@ -1,1 +1,1 @@
-# blogs
+# AWSBlogs
